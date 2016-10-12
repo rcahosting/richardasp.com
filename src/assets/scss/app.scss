@@ -1,0 +1,175 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+
+
+/********************
+*
+*
+*
+*********************/
+
+@mixin vertical-align {
+
+  position: relative;
+
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+
+  -ms-transform: translateY(-50%);
+
+  transform: translateY(-50%);
+
+}
+
+
+
+
+
+.hero {
+
+  background: url('../img/bg.jpg') no-repeat center center;
+
+	background-size: cover;
+
+  height: 50vh;
+
+  overflow: hidden;
+
+  h1 {
+
+    color: #fff;
+
+    text-align: center;
+
+    @include vertical-align;
+
+  }
+
+}
+
+
+
+.footer {
+
+  background-color: #292c2f;
+
+  text-align: center;
+
+  font-size: 1.2rem;
+
+  padding: 4rem;
+
+  p {
+
+    &.slogan {
+
+      color: #8d9093;
+
+      font-size: 1.8rem;
+
+      margin: 0 0 1rem;
+
+    }
+
+    &.copywrite {
+
+      color: #8f9296;
+
+      font-size: 0.875rem;
+
+      margin: 0;
+
+    }
+
+  }
+
+  .links a {
+
+    list-style: none;
+
+    font-weight: bold;
+
+    color: #ffffff;
+
+    padding: 3rem 0 2rem;
+
+    margin: 0;
+
+    &::after {
+
+      content: "•";
+
+      padding: 0 0.4rem 0 0.8rem;
+
+    }
+
+    &:last-child::after {
+
+      content: "";
+
+      padding: 0 0.4rem 0 0.8rem;
+
+    }
+
+  }
+
+}
+
+
+
+/*********************
+*
+*
+*
+*************************/
